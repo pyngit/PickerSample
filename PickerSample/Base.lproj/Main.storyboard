@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-mU-PGp">
+                                <rect key="frame" x="263" y="505" width="75" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="QMl-N7-lnb"/>
+                                    <constraint firstAttribute="height" constant="45" id="YBn-uy-F39"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="BUTTON"/>
+                                <connections>
+                                    <action selector="onTapBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aM0-O4-oBT"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dr5-Lw-vhD" customClass="AppDatePicker" customModule="PickerSample" customModuleProvider="target">
+                                <rect key="frame" x="30" y="0.0" width="540" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mSz-WQ-FS1"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTf-HL-Aq4" customClass="AppPickerView" customModule="PickerSample" customModuleProvider="target">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ud3-mU-PGp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="36w-43-5sB"/>
+                            <constraint firstItem="dr5-Lw-vhD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YEZ-yA-Daw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ud3-mU-PGp" secondAttribute="bottom" constant="50" id="aRb-BB-Zyo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dr5-Lw-vhD" secondAttribute="trailing" constant="10" id="acT-hp-J1v"/>
+                            <constraint firstItem="dr5-Lw-vhD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="iXE-NQ-taZ"/>
+                            <constraint firstItem="ZTf-HL-Aq4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lhY-qR-lgr"/>
+                            <constraint firstItem="dr5-Lw-vhD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="oXJ-vW-z79"/>
+                            <constraint firstItem="ZTf-HL-Aq4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tOw-TS-9r2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appPikerView" destination="ZTf-HL-Aq4" id="1YG-uE-Ify"/>
+                        <outlet property="datePicker" destination="dr5-Lw-vhD" id="bqo-yl-pcD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

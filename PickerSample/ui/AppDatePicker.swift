@@ -105,6 +105,8 @@ class AppDatePicker : UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource{
     }
     /*
     　選択された値を NSDateとして取得
+      1月32日などありえない日付を設定して、パースを失敗した場合はnilを返す
+    
     */
     func getDateValue() -> NSDate?{
         return convertToDate("\(yearValue)-\(monthValue)-\(dayValue)");
@@ -119,7 +121,7 @@ class AppDatePicker : UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource{
         let cal:NSCalendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!;
         let calUtil:NSCalendarUnit = .Year;
         let components = cal.components(calUtil, fromDate: baseDate);
-        
+        //今年を選択する
         var yearIdx:Int = 0;
         for(var n:Int = 1950;n<=2020;n++){
             YEAR_LIST.append(n);

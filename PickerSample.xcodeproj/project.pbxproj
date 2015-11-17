@@ -14,6 +14,8 @@
 		385ECCE61BF87ABC004568B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385ECCE41BF87ABC004568B7 /* LaunchScreen.storyboard */; };
 		385ECCEF1BF87E22004568B7 /* AppPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385ECCEE1BF87E22004568B7 /* AppPickerView.swift */; };
 		385ECCF11BF8D7D7004568B7 /* AppDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385ECCF01BF8D7D7004568B7 /* AppDatePicker.swift */; };
+		385ECCF41BFAC953004568B7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 385ECCF21BFAC953004568B7 /* LICENSE */; };
+		385ECCF51BFAC953004568B7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 385ECCF31BFAC953004568B7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		385ECCE71BF87ABC004568B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385ECCEE1BF87E22004568B7 /* AppPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPickerView.swift; sourceTree = "<group>"; };
 		385ECCF01BF8D7D7004568B7 /* AppDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDatePicker.swift; sourceTree = "<group>"; };
+		385ECCF21BFAC953004568B7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		385ECCF31BFAC953004568B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 		385ECCCF1BF87ABB004568B7 = {
 			isa = PBXGroup;
 			children = (
+				385ECCF21BFAC953004568B7 /* LICENSE */,
+				385ECCF31BFAC953004568B7 /* README.md */,
 				385ECCDA1BF87ABB004568B7 /* PickerSample */,
 				385ECCD91BF87ABB004568B7 /* Products */,
 			);
@@ -138,6 +144,7 @@
 			files = (
 				385ECCE61BF87ABC004568B7 /* LaunchScreen.storyboard in Resources */,
 				385ECCE31BF87ABC004568B7 /* Assets.xcassets in Resources */,
+				385ECCF41BFAC953004568B7 /* LICENSE in Resources */,
 				385ECCE11BF87ABC004568B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +158,7 @@
 			files = (
 				385ECCDE1BF87ABB004568B7 /* ViewController.swift in Sources */,
 				385ECCEF1BF87E22004568B7 /* AppPickerView.swift in Sources */,
+				385ECCF51BFAC953004568B7 /* README.md in Sources */,
 				385ECCDC1BF87ABB004568B7 /* AppDelegate.swift in Sources */,
 				385ECCF11BF8D7D7004568B7 /* AppDatePicker.swift in Sources */,
 			);

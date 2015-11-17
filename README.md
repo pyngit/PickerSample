@@ -1,0 +1,4 @@
+UIPickerViewを使ったサンプル
+
+DelegateとDatasouceはサンプルによくあるViewに作成せずUIPickerViewを継承したクラスに実装
+ボタンを押した時点で各PickerViewから選択している値を取得する。
